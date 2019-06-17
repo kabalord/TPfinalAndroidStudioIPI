@@ -1,57 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="308dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button1"
-            android:padding="5dp"
-            android:textSize="50sp"
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RGB color"
-            android:background="#FFFF00"/>
+            app:srcCompat="@drawable/ipi" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:text="TPfinalAndroidStudioIPI"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button2"
-            android:padding="5dp"
-            android:textSize="50sp"
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
-            android:layout_weight="1"
-            android:text="HSL color"
-            android:background="#0000FF"/>/>
+            <Button
+                android:id="@+id/button1"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="RGB color"
+                android:background="#e53935"
+                android:textColor="#ffffff"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button3"
-            android:padding="5dp"
-            android:textSize="50sp"
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
-            android:layout_weight="1"
-            android:text="Calculator"
-            android:background="#FF0000"/>/>
+            <Button
+                android:id="@+id/button2"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="HSL color"
+                android:background="#f44336"
+                android:textColor="#ffffff"
+                />/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button3"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="Calculator"
+                android:background="#ef5350"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 
