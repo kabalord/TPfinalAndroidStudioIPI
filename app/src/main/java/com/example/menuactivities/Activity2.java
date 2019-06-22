@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class activity2 extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
+public class Activity2 extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
     TextView btnreturn;
     SeekBar  hue, saturation, lightness;
     TextView  vhue, vsaturation, vlightness, color;
-    int h = 0, s = 0, l = 0;
+    int h = 0;
+    float s = 0;
+    float l = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,21 +31,17 @@ public class activity2 extends AppCompatActivity implements SeekBar.OnSeekBarCha
         saturation.setOnSeekBarChangeListener(this);
         lightness.setOnSeekBarChangeListener(this);
 
-
-
-
-
-
         btnreturn = (TextView) findViewById(R.id.btnreturn);
 
         btnreturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent btnreturn = new Intent(activity2.this, MainActivity.class);
+                Intent btnreturn = new Intent(Activity2.this, Activity0.class);
                 startActivity(btnreturn);
             }
         });
+
     }
 
     @Override

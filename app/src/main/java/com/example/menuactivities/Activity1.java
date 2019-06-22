@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class activity1 extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
+public class Activity1 extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
     TextView btnreturn;
     SeekBar  red, green, blue;
@@ -30,21 +30,18 @@ public class activity1 extends AppCompatActivity implements SeekBar.OnSeekBarCha
         green.setOnSeekBarChangeListener(this);
         blue.setOnSeekBarChangeListener(this);
 
-
-
-
-
-
         btnreturn = (TextView) findViewById(R.id.btnreturn);
 
         btnreturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent btnreturn = new Intent(activity1.this, MainActivity.class);
+                Intent btnreturn = new Intent(Activity1.this, Activity0.class);
                 startActivity(btnreturn);
             }
         });
+
+
     }
 
     @Override

@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activity3 extends AppCompatActivity implements View.OnClickListener {
+public class Activity3 extends AppCompatActivity implements View.OnClickListener {
 
     EditText numero1, numero2;
     Button somme, soustraire, multiplication, division;
@@ -38,19 +38,18 @@ public class activity3 extends AppCompatActivity implements View.OnClickListener
         multiplication.setOnClickListener(this);
         division.setOnClickListener(this);
 
-
         btnreturn = (TextView) findViewById(R.id.btnreturn);
 
         btnreturn.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View v) {
 
-                Intent btnreturn = new Intent(activity3.this, MainActivity.class);
+                Intent btnreturn = new Intent(Activity3.this, Activity0.class);
                 startActivity(btnreturn);
             }
         });
+
+
     }
 
     @Override
